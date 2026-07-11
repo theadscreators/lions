@@ -4,9 +4,11 @@ import { fmt } from "../../lib/formatters";
 import { AnimatedBar } from "../ui/AnimatedBar";
 import { FONT } from "../../theme/theme";
 import { useMatches } from "../../hooks/useMatches";
+import { MinuteEditorModal } from "../MinuteEditorModal";
 
-export function TeamDetail({ equipo, t, onBack }) {
+export function TeamDetail({ equipo, t, auth, onUpdateClients, onBack }) {
   const [tab, setTab] = useState("LIONS");
+  const [showMinuteEditor, setShowMinuteEditor] = useState(false);
   const stats = calcStats(equipo.clientes);
   const status = getStatus(equipo);
   const sc = statusColor(status, t);
@@ -29,7 +31,27 @@ export function TeamDetail({ equipo, t, onBack }) {
             <div style={{ fontSize: 11, color: sc, fontWeight: 800, letterSpacing: 2, marginTop: 3 }}>{sl.toUpperCase()}</div>
           </div>
         </div>
-        <button onClick={onBack} style={{ background: "none", border: "none", color: t.muted, fontSize: 24, cursor: "pointer", padding: 0, lineHeight: 1 }}>✕</button>
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          {(auth?.isAdmin || auth?.isProducer) && (
+            <button 
+              onClick={() => setShowMinuteEditor(true)}
+              style={{ 
+                background: `${t.lions}15`, 
+                border: `1px solid ${t.lions}30`, 
+                borderRadius: 8, 
+                padding: "6px 12px", 
+                color: t.lions, 
+                fontSize: 10, 
+                fontWeight: 800, 
+                cursor: "pointer", 
+                fontFamily: FONT 
+              }}
+            >
+              EDITAR MINUTOS
+            </button>
+          )}
+          <button onClick={onBack} style={{ background: "none", border: "none", color: t.muted, fontSize: 24, cursor: "pointer", padding: 0, lineHeight: 1 }}>✕</button>
+        </div>
       </div>
 
       {/* KPIs */}
@@ -95,6 +117,31 @@ export function TeamDetail({ equipo, t, onBack }) {
 
       {/* Próximos Partidos */}
       <NextMatches clubId={equipo.id} t={t} />
+
+      {showMinuteEditor && (
+        <MinuteEditorModal
+          t={t}
+          match={{
+            home_club: equipo,
+            display_home_name: equipo.nombre
+          }}
+          isClubMode={true}
+          onClose={() => setShowMinuteEditor(false)}
+          onSave={async (data) => {
+            try {
+              const ok = await onUpdateClients(equipo.id, data.clients);
+              if (ok) {
+                setShowMinuteEditor(false);
+              } else {
+                alert("Error al actualizar los minutos del equipo.");
+              }
+            } catch (e) {
+              console.error(e);
+              alert("Error inesperado al guardar.");
+            }
+          }}
+        />
+      )}
 
       <style>{`@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}`}</style>
     </div>

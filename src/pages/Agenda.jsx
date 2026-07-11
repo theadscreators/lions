@@ -142,7 +142,7 @@ export function Agenda({ t, paises = [] }) {
   // Guests (no user) also see all matches in read-only mode via public RLS policies
   const myClubIds = profile?.club_ids || [];
   const filterClubId = (isAdmin || isProducer) ? null : (myClubIds.length > 0 ? myClubIds[0] : null);
-  const { matches, loading, addMatchEvent, addMatch, updateMatch, updateClubClients } = useMatches(
+  const { matches, loading, saving, addMatchEvent, addMatch, updateMatch, updateClubClients } = useMatches(
     filterClubId, true, bounds.start, bounds.end
   );
 
@@ -163,6 +163,7 @@ export function Agenda({ t, paises = [] }) {
   };
 
   const handleEvent = async (matchId, eventType, payload = {}) => {
+    if (saving) return; // Prevent double-clicks
     try {
       const ok = await addMatchEvent(matchId, eventType, profile?.id||null, profile?.name||user?.email||"Sistema", payload);
       if (!ok) throw new Error("fail");
@@ -188,7 +189,7 @@ export function Agenda({ t, paises = [] }) {
             onChange={e=>setUploadUrl(e.target.value)} 
             style={{padding:"3px 6px",borderRadius:4,border:`1px solid ${t.border}`,background:t.bg,color:t.text,fontSize:10,width:120}}
           />
-          <button onClick={()=>handleEvent(id,'playlist_uploaded',{playlist_url:uploadUrl})} style={btn(t.accent,"#fff")}>Ok</button>
+          <button disabled={saving} onClick={()=>handleEvent(id,'playlist_uploaded',{playlist_url:uploadUrl})} style={btn(t.accent,"#fff")}>{saving ? '...' : 'Ok'}</button>
           <button onClick={()=>setActiveUpload(null)} style={btn(t.bg,t.text)}>x</button>
         </div>
       );
@@ -345,7 +346,7 @@ export function Agenda({ t, paises = [] }) {
                           onChange={e=>setUploadUrl(e.target.value)} 
                           style={{padding:"3px 6px",borderRadius:4,border:`1px solid ${t.border}`,background:t.bg,color:t.text,fontSize:10,width:120}}
                         />
-                        <button onClick={()=>handleEvent(m.id,'playlist_uploaded',{playlist_url:uploadUrl})} style={{padding:"4px 8px",borderRadius:6,border:"none",background:t.accent,color:"#fff",fontSize:9,fontWeight:800,cursor:"pointer",fontFamily:FONT}}>Ok</button>
+                        <button disabled={saving} onClick={()=>handleEvent(m.id,'playlist_uploaded',{playlist_url:uploadUrl})} style={{padding:"4px 8px",borderRadius:6,border:"none",background:t.accent,color:"#fff",fontSize:9,fontWeight:800,cursor:saving?"default":"pointer",fontFamily:FONT,opacity:saving?0.5:1}}>{saving ? '...' : 'Ok'}</button>
                         <button onClick={()=>setActiveUpload(null)} style={{padding:"4px 8px",borderRadius:6,border:"none",background:t.bg,color:t.text,fontSize:9,fontWeight:800,cursor:"pointer",fontFamily:FONT}}>x</button>
                       </div>
                     ) : (
@@ -468,8 +469,16 @@ export function Agenda({ t, paises = [] }) {
         </div>
       </div>
 
-      {showAddMatch && <MatchModal t={t} paises={paises} onClose={()=>setShowAddMatch(false)} onSave={async d=>{await addMatch(d.homeClubId,d.awayTeamName,d.matchDate,d.venue,d.notes,d.pautaOverride);setShowAddMatch(false);}}/>}
-      {editingMatch && <MatchModal t={t} paises={paises} match={editingMatch} onClose={()=>setEditingMatch(null)} onSave={async d=>{await updateMatch(editingMatch.id,{home_club_id:d.homeClubId,away_team_name:d.awayTeamName,match_date:d.matchDate,venue:d.venue,operational_notes:d.notes,pauta_override:d.pautaOverride});setEditingMatch(null);}}/>}
+      {showAddMatch && <MatchModal t={t} paises={paises} onClose={()=>setShowAddMatch(false)} onSave={async d=>{
+        const ok = await addMatch(d.homeClubId,d.awayTeamName,d.matchDate,d.venue,d.notes,d.pautaOverride);
+        if (ok) setShowAddMatch(false);
+        else alert("Error al guardar el partido. Revisá los datos e intentá de nuevo.");
+      }}/>}
+      {editingMatch && <MatchModal t={t} paises={paises} match={editingMatch} onClose={()=>setEditingMatch(null)} onSave={async d=>{
+        const ok = await updateMatch(editingMatch.id,{home_club_id:d.homeClubId,away_team_name:d.awayTeamName,match_date:d.matchDate,venue:d.venue,operational_notes:d.notes,pauta_override:d.pautaOverride});
+        if (ok) setEditingMatch(null);
+        else alert("Error al actualizar el partido. Revisá los datos e intentá de nuevo.");
+      }}/>}
       {activeMinuteEditor && (
         <MinuteEditorModal
           t={t}

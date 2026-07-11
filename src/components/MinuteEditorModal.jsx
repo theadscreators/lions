@@ -8,7 +8,7 @@ const formatMinutes = (num) => {
   return rounded % 1 === 0 ? rounded.toFixed(0) : rounded.toFixed(1);
 };
 
-export function MinuteEditorModal({ t, match, onClose, onSave }) {
+export function MinuteEditorModal({ t, match, onClose, onSave, isClubMode = false }) {
   const [lionsBrands, setLionsBrands] = useState([]);
   const [clubBrands, setClubBrands] = useState([]);
   const [golBrand, setGolBrand] = useState(match?.gol_brand || "");
@@ -260,7 +260,7 @@ export function MinuteEditorModal({ t, match, onClose, onSave }) {
           <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
             <span style={{ fontSize: "10px", fontWeight: 800, color: "#ffb4ab", letterSpacing: "1.5px", textTransform: "uppercase" }}>EDITOR DE MINUTOS</span>
             <span style={{ fontSize: "16px", fontWeight: 900, color: "#fddbd7" }}>
-              {match?.display_home_name} VS {match?.display_away_name}
+              {isClubMode ? (match?.display_home_name || "CONFIGURACIÓN") : `${match?.display_home_name} VS ${match?.display_away_name}`}
             </span>
           </div>
           <button 
@@ -527,51 +527,55 @@ export function MinuteEditorModal({ t, match, onClose, onSave }) {
           </div>
 
           {/* Estado del Gol Input */}
-          <div style={{
-            background: "#1a0a08", border: "1px solid #ff313130", borderRadius: "10px",
-            padding: "12px 14px", display: "flex", flexDirection: "column", alignItems: "center", gap: 6
-          }}>
-            <span style={{ fontSize: "12px", fontWeight: 900, color: "#ffb4ab", display: "flex", alignItems: "center", gap: 4 }}>
-              ⚽ ESTADO DEL GOL
-            </span>
-            <input 
-              type="text" 
-              value={golBrand} 
-              onChange={e => setGolBrand(e.target.value)} 
-              placeholder="(SIN GOL ASIGNADO)" 
-              style={{
-                background: "#251210", border: "1px solid #ff313160", borderRadius: "6px",
-                color: "#ff3131", fontSize: "14px", fontWeight: 900, textAlign: "center",
-                padding: "6px 12px", width: "100%", outline: "none", textTransform: "uppercase"
-              }}
-            />
-            <input 
-              type="text" 
-              value={golNotes} 
-              onChange={e => setGolNotes(e.target.value)} 
-              placeholder="Pauta vendida - Exclusividad de mención" 
-              style={{
-                background: "none", border: "none", borderBottom: "1px solid #4a3431",
-                color: "#ae8883", fontSize: "10px", textAlign: "center",
-                padding: "2px", width: "100%", outline: "none"
-              }}
-            />
-          </div>
+          {!isClubMode && (
+            <div style={{
+              background: "#1a0a08", border: "1px solid #ff313130", borderRadius: "10px",
+              padding: "12px 14px", display: "flex", flexDirection: "column", alignItems: "center", gap: 6
+            }}>
+              <span style={{ fontSize: "12px", fontWeight: 900, color: "#ffb4ab", display: "flex", alignItems: "center", gap: 4 }}>
+                ⚽ ESTADO DEL GOL
+              </span>
+              <input 
+                type="text" 
+                value={golBrand} 
+                onChange={e => setGolBrand(e.target.value)} 
+                placeholder="(SIN GOL ASIGNADO)" 
+                style={{
+                  background: "#251210", border: "1px solid #ff313160", borderRadius: "6px",
+                  color: "#ff3131", fontSize: "14px", fontWeight: 900, textAlign: "center",
+                  padding: "6px 12px", width: "100%", outline: "none", textTransform: "uppercase"
+                }}
+              />
+              <input 
+                type="text" 
+                value={golNotes} 
+                onChange={e => setGolNotes(e.target.value)} 
+                placeholder="Pauta vendida - Exclusividad de mención" 
+                style={{
+                  background: "none", border: "none", borderBottom: "1px solid #4a3431",
+                  color: "#ae8883", fontSize: "10px", textAlign: "center",
+                  padding: "2px", width: "100%", outline: "none"
+                }}
+              />
+            </div>
+          )}
 
           {/* Notas de Pauta Operational notes */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-            <span style={{ fontSize: "10px", fontWeight: 800, color: "#ae8883" }}>📝 NOTAS DE PAUTA / OPERATIVAS</span>
-            <textarea
-              value={notes}
-              onChange={e => setNotes(e.target.value)}
-              placeholder="- Dejar aquí las notas relevantes para el partido..."
-              style={{
-                width: "100%", minHeight: "60px", background: "#251210", border: "1px solid #4a3431",
-                borderRadius: "6px", padding: "8px 10px", color: "#fddbd7", fontSize: "11px",
-                fontFamily: FONT, resize: "vertical", outline: "none"
-              }}
-            />
-          </div>
+          {!isClubMode && (
+            <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+              <span style={{ fontSize: "10px", fontWeight: 800, color: "#ae8883" }}>📝 NOTAS DE PAUTA / OPERATIVAS</span>
+              <textarea
+                value={notes}
+                onChange={e => setNotes(e.target.value)}
+                placeholder="- Dejar aquí las notas relevantes para el partido..."
+                style={{
+                  width: "100%", minHeight: "60px", background: "#251210", border: "1px solid #4a3431",
+                  borderRadius: "6px", padding: "8px 10px", color: "#fddbd7", fontSize: "11px",
+                  fontFamily: FONT, resize: "vertical", outline: "none"
+                }}
+              />
+            </div>
+          )}
 
         </div>
 

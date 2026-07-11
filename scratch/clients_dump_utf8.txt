@@ -1,0 +1,198 @@
+﻿Ôùç injected env (3) from .env // tip: Ôîÿ enable debugging { debug: true }
+
+======================================================
+CLUB: La Serena (c82a2dba-14ea-4b75-baa1-968599d66fc2)
+======================================================
+  - ID: 24a55866-aa49-412f-aab7-fff6ccb00488 | Name: "Abonados" | Cat: CLUB | Min: 0 | Bonif: 0
+  - ID: 7661d5e1-101f-42a5-9eb5-36fcb1f0d9d7 | Name: "Agua R├¡o Cristal" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: 700f732a-3362-44eb-9b72-cfc82c5b8d13 | Name: "Apuesta Royal" | Cat: CLUB | Min: 8 | Bonif: 0
+  - ID: 6484e85b-bc01-417e-ae8d-e90c8d83c617 | Name: "Celta" | Cat: CLUB | Min: 1.5 | Bonif: 0
+  - ID: 4713fb5f-ace7-4945-8f39-527340596746 | Name: "Comicon Chile" | Cat: CLUB | Min: 0 | Bonif: 0
+  - ID: 90fd7a54-35c8-4757-9d81-cc4ecd4d3c26 | Name: "Diario El D├¡a" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: 7ea03d89-f7a8-47e9-b8c7-943be230f788 | Name: "Escuela" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 036febc5-7d9c-42e8-a7fd-90d132e00e2d | Name: "FIUME" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: ec1c9ff3-8187-467d-bca8-2390f7b37d1f | Name: "Municipalidad LS" | Cat: CLUB | Min: 1.5 | Bonif: 0
+  - ID: 2b47b514-a2a0-4085-90e9-9ea4de80ca7b | Name: "Newkar" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: f9a58385-6fb3-4ede-9281-41c28869c522 | Name: "Recargo" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: e3e824a5-fc45-4b8e-a7c3-044ff29e7e79 | Name: "Red Salud" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 4a33fae0-069a-47ec-bc40-dc3d5ae990cc | Name: "Suerox" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: a6ca3ef7-9648-4614-b492-972cc0227be0 | Name: "Tienda Granate" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 8a7081a9-0305-4d37-ada6-d9a3d4f2d683 | Name: "1XBET" | Cat: LIONS | Min: 6 | Bonif: 2
+  - ID: 1538e66b-0be6-44cc-97fd-2ac645fc849f | Name: "AP ROYAL" | Cat: LIONS | Min: 14 | Bonif: 2
+  - ID: cc8c6cb0-39e8-489d-8764-9fce5407f414 | Name: "BETANO" | Cat: LIONS | Min: 12 | Bonif: 4
+  - ID: 169f5bd3-36b6-4af7-b9e2-4bff6623250b | Name: "Betchile" | Cat: LIONS | Min: 0 | Bonif: 4
+  - ID: 29601434-c1e3-47eb-a8a6-6ba1cada980c | Name: "COOLBET" | Cat: LIONS | Min: 6 | Bonif: 2
+  - ID: c2b53478-f6b9-43e0-b926-2bd1a45d8800 | Name: "Epicbet" | Cat: LIONS | Min: 2 | Bonif: 2
+  - ID: 737c157a-3c33-49dd-b2aa-fcc4c587ba64 | Name: "Lions" | Cat: LIONS | Min: 0 | Bonif: 2
+  - ID: 3a4a601c-54a7-4a83-931f-8ecdd586f356 | Name: "Marathon" | Cat: LIONS | Min: 0 | Bonif: 2
+  - ID: 96f1c475-690e-4b5d-be87-529dd433b469 | Name: "NOVIBET" | Cat: LIONS | Min: 2 | Bonif: 2
+
+======================================================
+CLUB: U. de Concepci├│n (1da5f361-b625-468f-a3d6-020271a7b7f1)
+======================================================
+  - ID: e00daae0-5543-4541-bc00-399fdd1adbdb | Name: "Cl├¡nica del Sur" | Cat: CLUB | Min: 2.5 | Bonif: 0
+  - ID: 5335d1e6-4d95-48d7-b8d5-2e6d89fa9221 | Name: "Coca-Cola" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: 9e5437a1-7e2a-4761-902a-fecb82156f70 | Name: "Lomo Alem├ín" | Cat: CLUB | Min: 2.5 | Bonif: 0
+  - ID: 4caa7b7a-5f52-4891-aad6-6d4677e41a0d | Name: "Meds" | Cat: CLUB | Min: 3 | Bonif: -0.5
+  - ID: bd75fec0-6de9-4d6f-b7da-5bb54673a07e | Name: "PF" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 865a38a3-7724-4392-af62-0f0a291f3516 | Name: "Powerade" | Cat: CLUB | Min: 2.5 | Bonif: 0
+  - ID: 81d377f4-ba28-48ba-ac2b-a195646704e5 | Name: "Royal" | Cat: CLUB | Min: 15 | Bonif: 0
+  - ID: 57fcd3ca-c796-495b-94b8-2eda1df0ad68 | Name: "Sabes Deportes" | Cat: CLUB | Min: 2.5 | Bonif: 0
+  - ID: 72d6e8e1-a208-421d-9c57-e5dc04982093 | Name: "Termas de Catillo" | Cat: CLUB | Min: 2.5 | Bonif: 0
+  - ID: 3eadb730-e59a-44d6-847f-e3d093a4c59b | Name: "Ticketmaster" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: a548da70-a2fd-4131-a836-c8c1d328ccc6 | Name: "Zapping" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 86890ab9-ccdb-4c7f-be6a-659efed11e2e | Name: "1XBET" | Cat: LIONS | Min: 8 | Bonif: 0
+  - ID: 277c4399-8a3e-407a-ad29-b57baaf7571b | Name: "AP ROYAL" | Cat: LIONS | Min: 8 | Bonif: 0
+  - ID: 188b2e6f-69f9-43c6-8e83-b26fa0f5a8d4 | Name: "BETANO" | Cat: LIONS | Min: 12 | Bonif: 2
+  - ID: 0c7e018f-5ca1-42ea-89da-d9e22694fcde | Name: "COOLBET" | Cat: LIONS | Min: 8 | Bonif: -2
+  - ID: 20c1f01f-31e6-426c-bd8f-a97e3cce38f0 | Name: "Epicbet" | Cat: LIONS | Min: 2 | Bonif: 0
+  - ID: 95aa31f0-f7ce-4255-a570-6d0054ef4ea8 | Name: "Jugabet" | Cat: LIONS | Min: 10 | Bonif: 0
+  - ID: 218b64ae-53bb-4cdc-a172-5f35a0a9614e | Name: "LatamWin" | Cat: LIONS | Min: 4 | Bonif: 0
+  - ID: fc2aad37-e036-4c03-b18a-d549f787c93b | Name: "NOVIBET" | Cat: LIONS | Min: 2 | Bonif: 0
+  - ID: d2b787cb-5d02-4544-8a95-3c9c4347a576 | Name: "Skechers" | Cat: LIONS | Min: 4 | Bonif: 0
+
+======================================================
+CLUB: Cobresal (ac7c7230-0540-487b-9206-9dcc2675774b)
+======================================================
+  - ID: badf3c03-8c5a-4b24-bc14-4ab66c774264 | Name: "Anakena" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: a9f2cb29-21b5-43cd-a931-5e644b312e96 | Name: "Apuestas Royal" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 63088d72-c85e-45de-829d-9c63bd543a38 | Name: "Bailac" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 63580148-05a8-43fb-92f5-830af7ae5322 | Name: "Casino Cobres" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: 9719361e-2bb0-4a31-bcd9-08802fef2181 | Name: "Codelco" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 086feb2d-5bc1-4009-ab6e-9f2c2d406aff | Name: "Kryzpo" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: 9cd43d29-8f9b-49c3-bbb9-8049739a6aca | Name: "KS7" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 0b797c7b-fd6e-4b37-898d-6919739d4517 | Name: "Kwaskar" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 52dfa473-5388-4661-99b5-d60a5b308e5d | Name: "Pullman Bus" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: 9976c6fd-25b8-4926-9ef7-7402e25b10af | Name: "R&R Mining" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 5dfeb860-28f3-4c46-998d-4144a7538fb6 | Name: "Rodastock" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 449ba206-b59f-4966-98e4-6193ab228fd2 | Name: "Shimin" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 8490e7db-68f6-4b5d-924b-80157119e024 | Name: "TecRapol" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: d774e49d-f6ce-4559-9d9f-129e41005703 | Name: "Unimarc" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: 4b1320a7-1379-4b41-ba9e-8a4e0399b389 | Name: "1XBET" | Cat: LIONS | Min: 6 | Bonif: 2
+  - ID: fbdbb588-1f2d-473b-82e5-ab8a7ed8e524 | Name: "AP ROYAL" | Cat: LIONS | Min: 14 | Bonif: 2
+  - ID: de0f1cc1-de60-4108-8d72-b39dcd0b7828 | Name: "BETANO" | Cat: LIONS | Min: 12 | Bonif: 4
+  - ID: 565ca007-3b19-4c23-8fc3-75d3dc5db73f | Name: "BETCHILE" | Cat: LIONS | Min: 0 | Bonif: 4
+  - ID: fc32138d-4332-450f-a9df-6f554f9ce529 | Name: "COOLBET" | Cat: LIONS | Min: 6 | Bonif: 2
+  - ID: 4d087dcf-49eb-4b27-890b-f4a2eea6e118 | Name: "EPICBET" | Cat: LIONS | Min: 2 | Bonif: 3
+  - ID: 3683cf90-0fd7-498b-80be-33db257ecd12 | Name: "LIONS" | Cat: LIONS | Min: 0 | Bonif: 2
+  - ID: 55b53e2c-fbd7-40ac-90f4-e39c01366355 | Name: "MARATHON" | Cat: LIONS | Min: 0 | Bonif: 2
+  - ID: 95759dc4-88cd-41e2-9db3-e82b03a670a3 | Name: "NOVIBET" | Cat: LIONS | Min: 2 | Bonif: 3
+
+======================================================
+CLUB: Palestino (2b4a0d3a-51f3-46ba-8d12-5cf7470e7ac6)
+======================================================
+  - ID: e928a955-6b67-42d6-aa09-a6fb226b2786 | Name: "AP ROYAL" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: 177295de-7468-44b0-aec5-b146089dabb3 | Name: "Belen 2000" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: fc3e73db-8fa9-4383-af84-3bfc0b9c48cc | Name: "BOP" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 981c95a4-5cf9-409a-b283-cc3824be30b6 | Name: "CAPELLI" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 2a0049dc-6203-4eaa-a1d7-dafc5e5c5ee0 | Name: "Ironside" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: a5c0f3aa-fa5f-4447-a85c-b4abb2038765 | Name: "JORGE ZAMORANO" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: 44cba9d8-8dae-49d5-8abc-1eb39c920f91 | Name: "KAYSER" | Cat: CLUB | Min: 6 | Bonif: 0
+  - ID: 356a6eb5-682c-47ed-a51d-28ac55842de8 | Name: "KRYSPO" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: e1d3ae24-fdd9-4054-9124-044f593f3eb8 | Name: "MARLEY" | Cat: CLUB | Min: 5 | Bonif: 0
+  - ID: bfa6dee1-2614-4f83-b570-cff4024a591f | Name: "MEDS" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: 0ab7d43e-7125-4bd9-b3b1-d7cf6e786975 | Name: "SAN JORGE" | Cat: CLUB | Min: 8 | Bonif: 0
+  - ID: 9851e7b5-5f36-457e-9af4-e11158f79d97 | Name: "Tienda Palestino" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 10656a0c-123d-4e05-8710-2b58275396e6 | Name: "Wonder" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 0d23df3a-fee9-4221-94bd-bb0565c65f12 | Name: "1XBET" | Cat: LIONS | Min: 6 | Bonif: 0
+  - ID: d33f2c99-832a-4b9b-8e31-88caa838cd26 | Name: "AP ROYAL" | Cat: LIONS | Min: 12 | Bonif: 0
+  - ID: 2f68ac28-7af3-462d-be9d-834a361b20ed | Name: "BETANO" | Cat: LIONS | Min: 12 | Bonif: 4
+  - ID: 7d8652d7-7a88-469b-a932-98c36eec5082 | Name: "BETCHILE" | Cat: LIONS | Min: 0 | Bonif: 3
+  - ID: 0d23296c-b879-4bf9-bb16-79aaa62000d2 | Name: "COOLBET" | Cat: LIONS | Min: 6 | Bonif: 0
+  - ID: 750faee3-0df8-4099-b344-33809e0e56ff | Name: "EPICBET" | Cat: LIONS | Min: 2 | Bonif: 1
+  - ID: f635cdeb-6f48-42b4-81fe-5d2c27b963d3 | Name: "LIONS" | Cat: LIONS | Min: 0 | Bonif: 2
+  - ID: 8df81618-8e45-44b5-b235-b3199dba9792 | Name: "MARATHON" | Cat: LIONS | Min: 0 | Bonif: 2
+  - ID: 405c9eff-1b1a-45ac-8880-7ba7a4ce416e | Name: "NOVIBET" | Cat: LIONS | Min: 2 | Bonif: 1
+
+======================================================
+CLUB: Dep. Concepci├│n (7a089cda-846f-4ee6-a867-183127b68adb)
+======================================================
+  - ID: 1d8a5da0-89b4-484d-9da3-8a5dea4f0ac2 | Name: "AP ROYAL" | Cat: CLUB | Min: 5 | Bonif: 0
+  - ID: b307c9fd-6afe-4885-99c3-bca77f6d3c5c | Name: "CBM" | Cat: CLUB | Min: 5 | Bonif: 0
+  - ID: 93b1f40a-148b-46f5-a855-e502dd6c252d | Name: "CHILE PASTO" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: 777356da-ebdd-46d5-8fda-211bb66acd32 | Name: "CMPC" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: 64db1a8d-9a70-4844-afaa-583ba6440421 | Name: "Cygnus" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: c3ea91af-eee5-4462-a388-c7332ee7cfde | Name: "EL CONCE" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 3d0c2f83-3236-415f-9619-d9e1379dcf36 | Name: "Epic Bet" | Cat: CLUB | Min: 0 | Bonif: 0
+  - ID: f98d61e8-e266-43a1-9ca0-7cf539d2f172 | Name: "EVM" | Cat: CLUB | Min: 5 | Bonif: 0
+  - ID: 1023525f-2a28-4be8-a222-35448a4f2d11 | Name: "KAIYI" | Cat: CLUB | Min: 6 | Bonif: 0
+  - ID: 4b688a36-6162-4523-843a-a402ac5f0a8c | Name: "KELME" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 32814df4-fb9c-47e4-b96e-dcec351b4f79 | Name: "PASSLINE" | Cat: CLUB | Min: 5 | Bonif: 0
+  - ID: f61e3651-3671-442e-adb1-2dd97564612a | Name: "Redbull" | Cat: CLUB | Min: 0 | Bonif: 0
+  - ID: 168e99f8-5ffb-4e3a-9639-dfa6996a03b8 | Name: "SANATORIO" | Cat: CLUB | Min: 6 | Bonif: 0
+  - ID: ef07ec21-c612-43de-8c6a-5e92459194c2 | Name: "SODIMAC" | Cat: CLUB | Min: 4 | Bonif: 0
+  - ID: 74127cde-336b-4b42-a83b-0792845d535d | Name: "1XBET" | Cat: LIONS | Min: 6 | Bonif: 0
+  - ID: 8b639017-8d1e-43fb-b30f-2a5da9615585 | Name: "AP ROYAL" | Cat: LIONS | Min: 14 | Bonif: 0
+  - ID: 518a4cb8-137a-4f4d-a663-bb09b636f52f | Name: "BETANO" | Cat: LIONS | Min: 12 | Bonif: 4
+  - ID: ab45ad1d-91f4-428e-8ba9-dcf5358fb920 | Name: "BETCHILE" | Cat: LIONS | Min: 0 | Bonif: 0
+  - ID: 07385df8-a920-4e49-85b4-7863479dedb3 | Name: "COOLBET" | Cat: LIONS | Min: 6 | Bonif: 0
+  - ID: d0229a90-3ecd-489a-8f83-778de2f4c5fb | Name: "EPICBET" | Cat: LIONS | Min: 2 | Bonif: 1
+  - ID: fc450816-4643-46bb-93f6-5c54bf0896e1 | Name: "LIONS" | Cat: LIONS | Min: 0 | Bonif: 0
+  - ID: c6096c32-09c0-4e28-b645-0827518f8cca | Name: "MARATHON" | Cat: LIONS | Min: 0 | Bonif: 0
+  - ID: 304150f0-b855-4f6b-af98-aba65d8c974a | Name: "NOVIBET" | Cat: LIONS | Min: 2 | Bonif: 1
+
+======================================================
+CLUB: Alianza Atl├®tico Sullana (e391e466-299a-4d7e-8b53-91157b0c4022)
+======================================================
+  - ID: a219177e-6619-4018-a8f5-88c2b23b3b0f | Name: "ANIMACION CLUB" | Cat: CLUB | Min: 0 | Bonif: 4
+  - ID: e89a78da-01e3-4270-b647-2bfae7319b79 | Name: "MANITSA" | Cat: CLUB | Min: 7 | Bonif: 0
+  - ID: 58677fcc-8bde-405a-be43-0403ecf8267e | Name: "NOBAVISION" | Cat: CLUB | Min: 5 | Bonif: 0
+  - ID: 53a2c244-68a8-4555-a734-223fc19e92f0 | Name: "SPORADE" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: b0c68d02-f10a-4a44-83d4-eeed751c4ad2 | Name: "WALON" | Cat: CLUB | Min: 6 | Bonif: 0
+  - ID: 5080ab8f-6f22-425c-a42d-7ad263f41d6f | Name: "BETANO" | Cat: LIONS | Min: 20 | Bonif: 8
+  - ID: b56b51c4-60f4-4b79-9df8-dc313de595c9 | Name: "CHEMA" | Cat: LIONS | Min: 3 | Bonif: 1
+  - ID: dda9f440-c3cc-4bfd-89ef-6fea5d72a298 | Name: "FRIDAYS" | Cat: LIONS | Min: 3 | Bonif: 0
+  - ID: d128f196-3158-4376-930d-2d4e3e6a9728 | Name: "ICOCERT" | Cat: LIONS | Min: 1.5 | Bonif: 1.5
+  - ID: a496495c-9213-4c70-b0e3-52aae63c10c1 | Name: "IPESA" | Cat: LIONS | Min: 4 | Bonif: 1
+  - ID: d69aecc8-e6a1-482b-a2d8-9be418cfb48f | Name: "JETSMART" | Cat: LIONS | Min: 5 | Bonif: 1
+  - ID: ba0be69c-52fe-46c6-b504-95113a1635a8 | Name: "LIONS" | Cat: LIONS | Min: 3 | Bonif: 1
+  - ID: ff7eeec4-7170-47a7-892c-08afbd10b2af | Name: "PROSEGUR" | Cat: LIONS | Min: 5 | Bonif: 1
+  - ID: 6225dacc-b03e-4d42-b3c2-463fc992af49 | Name: "SKY" | Cat: LIONS | Min: 5 | Bonif: 2
+
+======================================================
+CLUB: Juan Pablo II (26a7475b-b635-4011-898c-7af3618178af)
+======================================================
+  - ID: 4312e789-ebe9-46ff-a36f-948b70e9c0ea | Name: "ALTOS" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: e9456f87-7c69-4d68-bbff-be3f3ae57a18 | Name: "AT" | Cat: CLUB | Min: 9 | Bonif: 0
+  - ID: d3b94227-aa88-4e6f-9871-f21813544885 | Name: "POWERLYTE" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 48ce4f4a-bdf6-4347-9f21-be2131c7345a | Name: "TECNOGRAS" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: e3982abe-7c3f-448a-91f4-7999f19bf302 | Name: "USS" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 1b2193b2-51ed-43a1-b66a-e9af346e57d8 | Name: "BETANO" | Cat: LIONS | Min: 20 | Bonif: 7
+  - ID: 342940c0-d041-4d8b-80a5-bb94a7fb8327 | Name: "CHEMA" | Cat: LIONS | Min: 3 | Bonif: 2
+  - ID: 3d1445d2-0080-47d8-8628-c710702d2074 | Name: "FRIDAYS" | Cat: LIONS | Min: 3 | Bonif: 0
+  - ID: 49257b4b-d07b-496a-9909-3d1e208eb88c | Name: "ICOCERT" | Cat: LIONS | Min: 1.5 | Bonif: 2.5
+  - ID: cbe66a5e-824c-4fe1-a5b4-0a3d538ef4d1 | Name: "IPESA" | Cat: LIONS | Min: 4 | Bonif: 2
+  - ID: 08fdbf17-c4fd-47ea-a297-db2a190a44b8 | Name: "JETSMART" | Cat: LIONS | Min: 5 | Bonif: 2
+  - ID: b748888c-daf4-4834-afab-04ec55cb124a | Name: "LIONS" | Cat: LIONS | Min: 3 | Bonif: 2
+  - ID: 3830df84-3b3f-4aaf-8975-5de7ad322f32 | Name: "PROSEGUR" | Cat: LIONS | Min: 5 | Bonif: 2
+  - ID: c037cf4e-84cb-4b81-b11b-49abde657868 | Name: "SKY" | Cat: LIONS | Min: 5 | Bonif: 2
+
+======================================================
+CLUB: FC Cajamarca (fd1b5c18-f8b4-41a3-bd92-6a10afaf2f63)
+======================================================
+
+======================================================
+CLUB: Universitario (b9b6ccbf-bf2b-48e8-b67b-4b6fb4fc3ce7)
+======================================================
+  - ID: a67299b8-4ba6-4654-b917-f8e153e86871 | Name: "ALTOS" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: 312e798d-1f4c-44aa-a1aa-c809882afe8f | Name: "APUESTA TOTAL" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: 40517ab1-4092-49ce-88b5-1f9cb7748661 | Name: "BACKUS" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: 55fae656-9c85-468a-9da2-c62ee7c3a5cd | Name: "BITEL" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: f674b907-b503-42d5-b2d8-1563b6b0ff55 | Name: "ELECTROLIGHT" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 1eb96478-59cf-4f7f-ac6a-6abf08ab98c6 | Name: "ESAN" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: fe284cea-4a7c-4d15-8a48-681f54528935 | Name: "JETOUR" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: 64b13752-e0b5-4617-bcf6-000aa9c1961c | Name: "KLAR" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: f63f91ab-2c7a-4826-878e-a2008c1ebf19 | Name: "MARATHON" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 17693eb4-f55d-4bb2-a453-6b93d1e25f0b | Name: "MODA" | Cat: CLUB | Min: 1 | Bonif: 0
+  - ID: 269a55dc-2e1b-43a7-9de1-93df96d5c0f8 | Name: "MOVISUN" | Cat: CLUB | Min: 3 | Bonif: 0
+  - ID: b634a5b2-c990-44a4-94f7-4547dd743ef3 | Name: "OPALUX" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: 7d51d226-6f3b-44a8-95fe-cd7ebe952fd7 | Name: "SKY CLUB" | Cat: CLUB | Min: 2 | Bonif: 0
+  - ID: e556284a-34ad-405b-93b5-b23d41346f61 | Name: "APUESTA TOTAL" | Cat: LIONS | Min: 34 | Bonif: 0
+  - ID: 0194cc92-e548-4f50-908b-3a761af0a561 | Name: "CHEMA" | Cat: LIONS | Min: 3 | Bonif: 0
+  - ID: 6ff12acf-56a6-4d7e-a5b1-6a53c71200c1 | Name: "FRIDAYS" | Cat: LIONS | Min: 3 | Bonif: 0
+  - ID: 072a55a9-4b4d-45d9-aa3b-39ad737d461d | Name: "ICOCERT" | Cat: LIONS | Min: 1.5 | Bonif: 0
+  - ID: 7b2ec97f-ea56-4049-b8f0-7b6934857f50 | Name: "IPESA" | Cat: LIONS | Min: 4 | Bonif: 2
+  - ID: bc6a9b59-8219-4c73-aec0-a803ecc6a6a2 | Name: "JETSMART" | Cat: LIONS | Min: 5 | Bonif: 2
+  - ID: 95d1c6c7-4d8f-4238-b60d-20d87e015da4 | Name: "LIONS" | Cat: LIONS | Min: 3 | Bonif: 0
+  - ID: 575f7f8e-b772-4323-8727-6746e83e9cc3 | Name: "PROSEGUR" | Cat: LIONS | Min: 5 | Bonif: 2
+  - ID: 34e0259d-49da-45eb-b4f8-0a6fabad8606 | Name: "SKY" | Cat: LIONS | Min: 5 | Bonif: 0
